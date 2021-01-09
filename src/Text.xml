@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+	<LocalizedText>
+		<Row Tag="LOC_DISTRICT_AGRICULTURAL_NAME" Language="en_US">
+			<Text>Agricultural Center</Text>
+		</Row>
+		<Row Tag="LOC_DISTRICT_AGRICULTURAL_DESCRIPTION" Language="en_US">
+			<Text>A district placed once per city to balance food and production. Placed adjecent to the city center to boost [ICON_Food] Food yelds, place away from the city center to boost [ICON_Production] Production yelds</Text>
+		</Row>
+		<Row Tag="LOC_AGRICULTURAL_BASE" Language="en_US">
+			<Text>+{1_num} [ICON_Production] Production from placed distant to the City Center.</Text>
+		</Row>
+		<Row Tag="LOC_AGRICULTURAL_CITY_PRODUCTION" Language="en_US">
+			<Text>{1_num: number +#,###;-#,###} [ICON_Production] Production from the adjecent City Center.</Text>
+		</Row>
+		<Row Tag="LOC_AGRICULTURAL_AQUEDUCT" Language="en_US">
+			<Text>+{1_num} [ICON_Food] Food from the adjecent Aqueduct.</Text>
+		</Row>
+		<Row Tag="LOC_AGRICULTURAL_CITY_FOOD" Language="en_US">
+			<Text>+{1_num} [ICON_Food] Food from the adjecent City Center.</Text>
+		</Row>
+		<Row Tag="LOC_AGRICULTURAL_ENTERTAINMENT_COMPLEX_FOOD" Language="en_US">
+			<Text>+{1_num} [ICON_Food] Food from the adjecent Entertainment Complex.</Text>
+		</Row>
+		<Row Tag="LOC_AGRICULTURAL_COMMERCIAL_HUB_FOOD" Language="en_US">
+			<Text>+{1_num} [ICON_Food] Food from the adjecent Commercial Hub.</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

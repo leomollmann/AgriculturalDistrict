@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Agricultural Center</Name>
+    <Guid>c071ef49-ee13-4c1a-b0ca-93ba54b60793</Guid>
+    <ProjectGuid>71f940b2-1de2-48b8-84f0-6f03127122e5</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>This is a brief description of the mod.</Teaser>
+    <Description>This is a brief description of the mod.</Description>
+    <Authors>leomollmann</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>Agricultural Center</AssemblyName>
+    <RootNamespace>src</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Gameplay"><File>Gameplay.xml</File></UpdateDatabase><UpdateText id="Text"><File>Text.xml</File></UpdateText><UpdateArt id="Art"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="AgriculturalCenter.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Gameplay.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+	<Types>
+		<Row Type="DISTRICT_AGRICULTURAL" Kind="KIND_DISTRICT"/>
+	</Types>
+	<Districts>
+		<Row DistrictType="DISTRICT_AGRICULTURAL" Name="LOC_DISTRICT_AGRICULTURAL_NAME" Description="LOC_DISTRICT_AGRICULTURAL_DESCRIPTION" PrereqTech="TECH_POTTERY" PlunderType="PLUNDER_GOLD" PlunderAmount="50" AdvisorType="ADVISOR_GENERIC" Cost="30" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" Maintenance="2" CostProgressionParam1="1000" RequiresPlacement="true" RequiresPopulation="true" OnePerCity="true" Aqueduct="false" NoAdjacentCity="false" InternalOnly="false" ZOC="true" CaptureRemovesBuildings="false" CaptureRemovesCityDefenses="false" MilitaryDomain="NO_DOMAIN" CityStrengthModifier="2"/>
+	</Districts>
+	<District_Adjacencies>
+		<Row DistrictType="DISTRICT_AGRICULTURAL" YieldChangeId="Agricultural_Base"/>
+		<Row DistrictType="DISTRICT_AGRICULTURAL" YieldChangeId="Agricultural_City_Production"/>
+		<Row DistrictType="DISTRICT_AGRICULTURAL" YieldChangeId="Agricultural_Aqueduct"/>
+		<Row DistrictType="DISTRICT_AGRICULTURAL" YieldChangeId="Agricultural_City_Food"/>
+		<Row DistrictType="DISTRICT_AGRICULTURAL" YieldChangeId="Agricultural_Entertainment_Food"/>
+		<Row DistrictType="DISTRICT_AGRICULTURAL" YieldChangeId="Agricultural_Commercial_Hub_Food"/>
+	</District_Adjacencies>
+	<Improvement_Adjacencies>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Agricultural_Farm_Potery"/>
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldChangeId="Agricultural_Farm_The_Wheel"/>
+	</Improvement_Adjacencies>
+	<Adjacency_YieldChanges>
+		<Row ID="Agricultural_Base" Description="LOC_AGRICULTURAL_BASE" YieldType="YIELD_PRODUCTION" YieldChange="2" Self="true"/>
+		<Row ID="Agricultural_City_Production" Description="LOC_AGRICULTURAL_CITY_PRODUCTION" YieldType="YIELD_PRODUCTION" YieldChange="-2" TilesRequired="1" AdjacentDistrict="DISTRICT_CITY_CENTER"/>
+		<Row ID="Agricultural_Aqueduct" Description="LOC_AGRICULTURAL_AQUEDUCT" YieldType="YIELD_FOOD" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_AQUEDUCT"/>
+		<Row ID="Agricultural_City_Food" Description="LOC_AGRICULTURAL_CITY_FOOD" YieldType="YIELD_FOOD" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_CITY_CENTER"/>
+		<Row ID="Agricultural_Entertainment_Food" Description="LOC_AGRICULTURAL_ENTERTAINMENT_COMPLEX_FOOD" YieldType="YIELD_FOOD" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_ENTERTAINMENT_COMPLEX"/>
+		<Row ID="Agricultural_Commercial_Hub_Food" Description="LOC_AGRICULTURAL_COMMERCIAL_HUB_FOOD" YieldType="YIELD_FOOD" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_COMMERCIAL_HUB"/>
+		<Row ID="Agricultural_Farm_Potery" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentDistrict="DISTRICT_AGRICULTURAL" ObsoleteTech="TECH_THE_WHEEL"/>
+		<Row ID="Agricultural_Farm_The_Wheel" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="2" TilesRequired="1" AdjacentDistrict="DISTRICT_AGRICULTURAL" PrereqTech="TECH_THE_WHEEL"/>
+	</Adjacency_YieldChanges>
+</GameData>
